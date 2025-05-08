@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 function Card() {
     return (
-        <div className='sm:grid sm:grid-cols-2 mt-5 justify-center items-center flex flex-col'>
+        <Link href={`/blog/lorem`}>  <div className='sm:grid sm:grid-cols-2 mt-5 justify-center items-center flex flex-col'>
             <Image src={"/p1.jpeg"} alt='image' height={200} width={200} className='h-60 w-80 object-cover' />
             <div className='flex flex-col gap-3'>
                 <span className='flex justify-between '>
@@ -20,7 +21,7 @@ function Card() {
                 </button>
 
             </div>
-        </div>
+        </div></Link>
     )
 }
 

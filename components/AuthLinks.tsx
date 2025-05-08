@@ -9,7 +9,7 @@ const AuthLinks = () => {
     if (currentAuthStatus == "authenticated") {
         return (
             <>
-                <Link href="/profile" className='bg-amber-500 px-3  rounded-xl'>Profile</Link>
+                <Link href="/login" className='bg-amber-500 px-3  rounded-xl'>Login</Link>
 
             </>
         )
